@@ -24,7 +24,7 @@ kde(){
 # Function for Gnome-Shell
 gnome(){
     printf "\nEtapa 3/12: Instalando aplicativos GTK... \n\n"
-    sudo apt install vlc libreoffice libreoffice-l10n-pt-br libreoffice-qt5 libreoffice-kde5 gimp inkscape synaptic gparted gnome-disk-utility neofetch inxi jstest-gtk obs-studio jstest-gtk
+    sudo apt install vlc libreoffice libreoffice-l10n-pt-br gimp inkscape synaptic gparted gnome-disk-utility neofetch inxi jstest-gtk obs-studio jstest-gtk
     printf "\nEtapa 4/12: Instalando aplicativos KDE... \n\n"
     sudo apt install kdenlive qbittorrent
 }
@@ -51,7 +51,7 @@ sudo apt update && sudo apt install winehq-staging
 
 # Add Lutris repository and install
 printf "\nEtapa 8/12: Instalando o Lutris... \n\n"
-sudo add-apt-repository ppa:lutris-team/lutris && sudo apt update && sudo apt install lutris
+sudo add-apt-repository ppa:lutris-team/lutris && sudo apt install lutris
 
 # Download chrome.deb and install
 printf "\nEtapa 9/12: Instalando o Google Chrome... \n\n"
