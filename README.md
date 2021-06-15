@@ -6,8 +6,11 @@ apt without -y (For security, you will always have to confirm when asked).
 - KDE Neon 20.04 User Edition
 - Ubuntu/Kubuntu 20.04
 
-# Enable
-- Architecture i386
+# Enable Architecture i386?
+Yes.
+
+# Will be offered nvidia-driver?
+Yes.
 
 # Add Repositories
 - Wine-Staging
@@ -18,8 +21,5 @@ apt without -y (For security, you will always have to confirm when asked).
 If KDE Plasma: Preference for KDE packages, with few GTK packages.</br>
 If Gnome-Shell: Preference for GTK packages, with few KDE packages.</br>
 
-# Uninstall
-Nothing.
-
-# Will be offered nvidia-driver?
-Yes.
+# Packages that will be uninstalled
+None.
