@@ -37,7 +37,7 @@ esac
 
 # Proprietary NVIDIA Driver
 printf "\nEtapa 5/12: Instalando driver NVIDIA... \n\n"
-sudo apt install nvidia-driver-450
+sudo apt install nvidia-driver-465
 
 # Steam Install
 printf "\nEtapa 6/12: Instalando o Steam... \n\n"
