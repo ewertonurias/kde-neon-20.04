@@ -1,10 +1,5 @@
 #!/bin/bash
 
-#if [ $UID -ne 0 ]; then
-#    printf "Logue como root \n"
-#    exit 255
-#fi
-
 # Enable Multi-Arch Support
 printf "\nEtapa 1/12: Adicionando suporte i386... \n"
 sudo dpkg --add-architecture i386
@@ -39,7 +34,7 @@ esac
 printf "\nEtapa 5/12: Instalando driver NVIDIA... \n\n"
 sudo apt install nvidia-driver-465
 
-# Steam Install
+# Install Steam
 printf "\nEtapa 6/12: Instalando o Steam... \n\n"
 sudo apt install steam
 
@@ -53,7 +48,7 @@ sudo apt update && sudo apt install winehq-staging
 printf "\nEtapa 8/12: Instalando o Lutris... \n\n"
 sudo add-apt-repository ppa:lutris-team/lutris && sudo apt install lutris
 
-# Download chrome.deb and install
+# Download and install chrome.deb
 printf "\nEtapa 9/12: Instalando o Google Chrome... \n\n"
 wget -cO chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
 sudo apt install ./chrome.deb
@@ -63,7 +58,7 @@ printf "\nEtapa 10/12: Instalando o Discord... \n\n"
 wget -cO discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 sudo apt install ./discord.deb
 
-# Install flatpak and enable add repository Flathub
+# Install flatpak and add Flathub repository
 printf "\nEtapa 11/12: Adicionando Repositório Flathub... \n\n"
 sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
