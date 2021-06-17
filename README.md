@@ -1,6 +1,8 @@
 # kde-neon-20.04
-Post installation script for KDE Neon 20.04 User Edition. Made for my personal use.</br>
-apt without -y (For security, you will always have to confirm when asked).
+
+My personal script focused on post install KDE Neon 20.04.
+
+For security reasons, apt doesn't have -y argument, it's necessary to confirm everything when asked.
 
 # Supported Systems
 - KDE Neon 20.04 User Edition
@@ -18,8 +20,9 @@ Yes.
 - Flathub
 
 # Auto-Detect Desktop Environments (in case you want to use it on Ubuntu)
-If KDE Plasma: Preference for KDE packages, with few GTK packages.</br>
-If Gnome-Shell: Preference for GTK packages, with few KDE packages.</br>
+If KDE Plasma: Preference for KDE packages, with few GTK packages.
+
+If Gnome-Shell: Preference for GTK packages, with few KDE packages.
 
 # Packages that will be uninstalled
 None.
