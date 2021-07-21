@@ -11,11 +11,11 @@ For security reasons, apt doesn't have -y argument, it's necessary to confirm ev
 # Enable Architecture i386?
 Yes.
 
-# Will be offered nvidia-driver?
+# Will nvidia-driver be offered?
 Yes.
 
 # Add Repositories
-- Wine-Staging
+- Emulators (for winehq-staging)
 - Lutris
 - Flathub
 
