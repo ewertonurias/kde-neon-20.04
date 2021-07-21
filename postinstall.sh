@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Enable Multi-Arch Support
-printf "\nEtapa 1/12: Adicionando suporte i386... \n"
+printf "\nEtapa 1/12: Habilitando arquitetura i386... \n"
 sudo dpkg --add-architecture i386
 
 # Update repositories and upgrade packages
@@ -11,15 +11,15 @@ sudo apt update && sudo apt full-upgrade
 # Function for KDE Plasma
 kde(){
     printf "\nEtapa 3/12: Instalando aplicativos KDE... \n\n"
-    sudo apt install kate kdf kdenlive krita kcolorchooser akregator kget qbittorrent kdeconnect ffmpegthumbs ksystemlog kcalc sweeper partitionmanager
+    sudo apt install k{ate,df,denlive,rita,colorchooser,get,deconnect,systemlog,calc} akregator qbittorrent ffmpegthumbs sweeper partitionmanager
     printf "\nEtapa 4/12: Instalando aplicativos GTK... \n\n"
-    sudo apt install vlc libreoffice libreoffice-l10n-pt-br libreoffice-qt5 libreoffice-kde5 inkscape synaptic neofetch inxi jstest-gtk obs-studio jstest-gtk
+    sudo apt install vlc l{ibreoffice,ibreoffice-l10n-pt-br,ibreoffice-qt5,ibreoffice-kde5} i{nkscape,nxi} synaptic neofetch obs-studio jstest-gtk
 }
 
 # Function for Gnome-Shell
 gnome(){
     printf "\nEtapa 3/12: Instalando aplicativos GTK... \n\n"
-    sudo apt install vlc libreoffice libreoffice-l10n-pt-br gimp inkscape synaptic gparted gnome-disk-utility neofetch inxi jstest-gtk obs-studio jstest-gtk
+    sudo apt install vlc l{ibreoffice,ibreoffice-l10n-pt-br} g{imp,parted,nome-disk-utility} i{nkscape,nxi} synaptic neofetch obs-studio jstest-gtk
     printf "\nEtapa 4/12: Instalando aplicativos KDE... \n\n"
     sudo apt install kdenlive qbittorrent
 }
@@ -32,7 +32,7 @@ esac
 
 # Proprietary NVIDIA Driver
 printf "\nEtapa 5/12: Instalando driver NVIDIA... \n\n"
-sudo apt install nvidia-driver-465
+sudo apt install nvidia-driver-460
 
 # Install Steam
 printf "\nEtapa 6/12: Instalando o Steam... \n\n"
@@ -58,7 +58,7 @@ printf "\nEtapa 10/12: Instalando o Discord... \n\n"
 wget -cO discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 sudo apt install ./discord.deb
 
-# Install flatpak and add Flathub repository
+# Install flatpak and add flathub repository
 printf "\nEtapa 11/12: Adicionando Repositório Flathub... \n\n"
 sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
