@@ -2,7 +2,7 @@
 
 Meu script pessoal focado em pós instalação do KDE Neon 20.04.
 
-Por motivos de segurança, o apt não acompanha o argumento -y, é necessário confirmar tudo quando perguntando.
+Por motivos de segurança, o apt não acompanha o argumento -y, é necessário confirmar tudo quando perguntado.
 
 # Sistemas operacionais suportados
 - KDE Neon 20.04 User Edition
