@@ -1,28 +1,28 @@
 # kde-neon-20.04
 
-My personal script focused on post install KDE Neon 20.04.
+Meu script pessoal focado em pós instalação do KDE Neon 20.04.
 
-For security reasons, apt doesn't have -y argument, it's necessary to confirm everything when asked.
+Por motivos de segurança, o apt não acompanha o argumento -y, é necessário confirmar tudo quando perguntando.
 
-# Supported Systems
+# Sistemas operacionais suportados
 - KDE Neon 20.04 User Edition
 - Ubuntu/Kubuntu 20.04
 
-# Enable Architecture i386?
-Yes.
+# Habilita suporte multi-arquitetura (i386)?
+Sim.
 
-# Will nvidia-driver be offered?
-Yes.
+# Driver proprietário NVIDIA será oferecido?
+Sim.
 
-# Add Repositories
-- Emulators (for winehq-staging)
+# Quais repositórios serão adicionados?
+- OpenSUSE Emulators
 - Lutris
 - Flathub
 
-# Auto-Detect Desktop Environments (in case you want to use it on Ubuntu)
-If KDE Plasma: Preference for KDE packages, with few GTK packages.
+# Detecão automática de ambiente desktop (caso queira usar o script no Ubuntu)
+Se KDE Plasma: Preferência para pacotes Qt, com poucos pacotes GTK.
 
-If Gnome-Shell: Preference for GTK packages, with few KDE packages.
+Se Gnome-Shell: Preferência para pacotes GTK, com poucos pacotes Qt.
 
-# Packages that will be uninstalled
-None.
+# Pacotes que serão removidos
+Nenhum.
