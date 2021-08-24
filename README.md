@@ -19,7 +19,7 @@ Sim.
 - Lutris
 - Flathub
 
-# Detecão automática de ambiente desktop (caso queira usar o script no Ubuntu)
+# Detecção automática de ambiente desktop (caso queira usar o script no Ubuntu)
 Se KDE Plasma: Preferência para pacotes Qt, com poucos pacotes GTK.
 
 Se Gnome-Shell: Preferência para pacotes GTK, com poucos pacotes Qt.
