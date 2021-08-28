@@ -59,7 +59,7 @@ sudo apt install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 ### Instala o Telegram-Desktop (Flatpak)
-printf "\nEtapa 11/11: Instalando o Telegram [Flatpak]... \n\n"
+printf "\nEtapa 11/11: Instalando o Telegram... \n\n"
 flatpak install flathub org.telegram.desktop
 
 ### Fim do script.
