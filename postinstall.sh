@@ -53,10 +53,9 @@ printf "\nEtapa 9/11: Instalando o Discord... \n\n"
 wget -cO discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 sudo apt install ./discord.deb
 
-### Instala o Flatpak e adiciona o repositório Flathub
-printf "\nEtapa 10/11: Desabilitando snapd e habilitando Flatpak... \n\n"
-sudo systemctl stop snapd
-sudo apt purge snapd
+### Remove Snap, instala Flatpak e adiciona repositório Flathub
+printf "\nEtapa 10/11: Trocando Snap por Flatpak... \n\n"
+sudo apt remove --purge snapd
 sudo apt install flatpak
 sudo apt install plasma-discover-backend-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
