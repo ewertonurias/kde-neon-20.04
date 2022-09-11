@@ -6,7 +6,7 @@ sudo dpkg --add-architecture i386
 
 ### Atualiza repositórios e pacotes
 printf "\nEtapa 2/11: Atualizando o sistema... \n\n"
-sudo apt update && sudo apt full-upgrade
+pkcon refresh && pkcon update
 
 ### Função para KDE Plasma
 kde(){
@@ -32,7 +32,7 @@ esac
 
 ### Driver proprietário NVIDIA
 printf "\nEtapa 5/11: Instalando driver proprietário NVIDIA... \n\n"
-sudo apt install nvidia-driver-460
+sudo apt install nvidia-driver-515
 
 ### Instala o Steam
 printf "\nEtapa 6/11: Instalando o Steam... \n\n"
@@ -54,8 +54,11 @@ wget -cO discord.deb "https://discordapp.com/api/download?platform=linux&format=
 sudo apt install ./discord.deb
 
 ### Instala o Flatpak e adiciona o repositório Flathub
-printf "\nEtapa 10/11: Adicionando Repositório Flathub... \n\n"
+printf "\nEtapa 10/11: Desabilitando snapd e habilitando Flatpak... \n\n"
+sudo systemctl stop snapd
+sudo apt purge snapd
 sudo apt install flatpak
+sudo apt install plasma-discover-backend-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 ### Instala o Telegram-Desktop (Flatpak)
